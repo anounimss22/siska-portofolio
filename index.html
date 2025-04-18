@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Siska</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌓 Mode</button>
+  <header class="fade-in">
+    <img src="img/siska.jpg" alt="Foto Siska" class="profile-img" />
+    <h1>Siska</h1>
+    <p>Desainer Grafis • Jurusan DKV</p>
+    <a href="cv/siska-cv.pdf" class="btn-download" download>Download CV</a>
+  </header>
+
+  <main>
+    <section class="about slide-up">
+      <h2>Tentang Saya</h2>
+      <p>Halo! Saya Siska, seorang desainer grafis dari jurusan Desain Komunikasi Visual. Saya menyukai desain branding, ilustrasi digital, dan tipografi. Kreativitas dan detail adalah kekuatan utama saya.</p>
+    </section>
+
+    <section class="info slide-up">
+      <h2>Informasi Kontak</h2>
+      <ul>
+        <li><strong>Email:</strong> siska@email.com</li>
+        <li><strong>Telepon:</strong> -</li>
+        <li><strong>Instagram:</strong> @sisfng_</li>
+        <li><strong>LinkedIn:</strong> linkedin.com/in/siska-dkv</li>
+      </ul>
+    </section>
+
+    <section class="portfolio slide-up">
+      <h2>Portofolio Karya</h2>
+      <div class="project-grid">
+        <div class="project-card fade-in">
+          <img src="https://via.placeholder.com/300x200" alt="Karya 1" />
+          <p>Branding untuk produk kopi lokal</p>
+        </div>
+        <div class="project-card fade-in">
+          <img src="https://via.placeholder.com/300x200" alt="Karya 2" />
+          <p>Poster event musik indie</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact slide-up">
+      <h2>Kontak Saya</h2>
+      <form class="contact-form" action="mailto:siska@email.com" method="post" enctype="text/plain">
+        <input type="text" name="Nama" placeholder="Nama Anda" required />
+        <input type="email" name="Email" placeholder="Email Anda" required />
+        <textarea name="Pesan" rows="4" placeholder="Tulis pesan..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="fade-in">
+    <p>&copy; 2025 Siska. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
